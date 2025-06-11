@@ -5,37 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>يوسف حبيبة – مصمم مواقع</title>
   <style>
+    :root {
+      --primary: #007acc;
+      --bg: #ffffff;
+      --text: #333;
+      --light: #f2f2f2;
+    }
+
     body {
       margin: 0;
-      font-family: 'Tahoma', sans-serif;
-      background: #f3f3f3;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      font-family: 'Segoe UI', 'Tahoma', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      direction: rtl;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
       padding: 2rem;
-      text-align: right;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
+    header h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #007acc;
     }
 
-    p {
+    .intro {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .intro p {
       font-size: 1.2rem;
-      max-width: 600px;
-      line-height: 1.6;
+      line-height: 1.8;
     }
 
-    a.button {
+    .button {
       display: inline-block;
       margin-top: 1.5rem;
       padding: 0.75rem 1.5rem;
-      background-color: #007acc;
+      background-color: var(--primary);
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -43,37 +57,55 @@
       transition: background 0.3s ease;
     }
 
-    a.button:hover {
+    .button:hover {
       background-color: #005f99;
     }
 
     .contact {
+      background-color: var(--light);
+      padding: 2rem;
       margin-top: 2rem;
+      text-align: center;
+    }
+
+    .contact p {
       font-size: 1.1rem;
-      line-height: 2;
+      margin: 0.5rem 0;
     }
 
     footer {
-      margin-top: 3rem;
+      background-color: #fafafa;
+      text-align: center;
+      padding: 1rem;
       font-size: 0.9rem;
       color: #777;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <h1>يوسف حبيبة</h1>
-  <p>أنا مصمم مواقع من مصر، أقدّم مواقع احترافية بأسعار مناسبة وجودة عالية تناسب جميع الأجهزة.</p>
+  <header>
+    <h1>يوسف حبيبة</h1>
+    <p>مصمم مواقع محترف من مصر</p>
+  </header>
 
-  <div class="contact">
+  <section class="intro">
+    <p>
+      أنا مصمم مواقع أقدّم حلولاً حديثة واحترافية لتصميم مواقع إلكترونية متجاوبة، أنيقة وسريعة — كل ذلك بأسعار مناسبة.
+    </p>
+    <a class="button" href="mailto:yahabiba10@gmail.com">تواصل معي الآن</a>
+  </section>
+
+  <section class="contact">
     <p>📧 البريد الإلكتروني: <a href="mailto:yahabiba10@gmail.com">yahabiba10@gmail.com</a></p>
     <p>📱 رقم الهاتف: <a href="tel:+201559212381">+201559212381</a></p>
     <p>🔗 فيسبوك: <a href="https://www.facebook.com/share/1C4TNcECDf/" target="_blank">J Web</a></p>
-  </div>
+  </section>
 
-  <a class="button" href="mailto:yahabiba10@gmail.com">تواصل معي الآن</a>
-
-  <footer>© ٢٠٢٥ يوسف حبيبة – جميع الحقوق محفوظة</footer>
+  <footer>
+    © ٢٠٢٥ يوسف حبيبة – جميع الحقوق محفوظة
+  </footer>
 
 </body>
 </html>
